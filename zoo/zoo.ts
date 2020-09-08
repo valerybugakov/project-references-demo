@@ -1,9 +1,10 @@
-// import Animal from '../animals/index';
-import { Dog, createDog } from '../animals/index';
+import { makeRandomName } from "@p/core";
+import { Dog, createDog } from "@p/animal";
+
+import { test } from "test";
 
 export function createZoo(): Array<Dog> {
-    return [
-        createDog()
-    ];
-}
+  console.log(test, makeRandomName);
 
+  return [createDog()];
+}

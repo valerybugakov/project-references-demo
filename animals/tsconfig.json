@@ -3,8 +3,12 @@
   "compilerOptions": {
     "outDir": "../lib/animals",
     "rootDir": ".",
+    "baseUrl": "."
   },
+  "include": ["./**/*.ts*"],
   "references": [
-    { "path": "../core" }
+    {
+      "path": "../core"
+    }
   ]
 }

@@ -2,11 +2,16 @@
   "extends": "../tsconfig-base.json",
   "compilerOptions": {
     "outDir": "../lib/zoo",
-    "rootDir": "."
+    "rootDir": ".",
+    "baseUrl": "."
   },
+  "include": ["./**/*.ts*"],
   "references": [
     {
       "path": "../animals"
+    },
+    {
+      "path": "../core"
     }
   ]
 }
